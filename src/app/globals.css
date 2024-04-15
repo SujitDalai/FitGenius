@@ -13,7 +13,7 @@ body{
 }
 
 .mainhead1{
-    -webkit-text-stroke: 1px var(--col1);
+    -webkit-text-stroke: 3px var(--col1);
     color: transparent;
     font-size: 10rem;
     font-weight: 900;
