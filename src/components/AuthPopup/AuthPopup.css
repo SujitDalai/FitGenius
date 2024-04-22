@@ -22,7 +22,7 @@
 }
 
 .authform .left{
-    width: 50%;
+    width: 40%;
     /* height: 100%; */
     display: flex;
     justify-content: center;
@@ -39,7 +39,7 @@
 
 .authform .right{
     /* background-color: var(--col1); */
-    width: 50%;
+    width: 60%;
     height: 100%;
     border-left: 1px solid var(--col1);
     padding: 20px;
