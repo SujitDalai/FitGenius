@@ -11,14 +11,20 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@meinefinsternis/react-horizontal-date-picker": "^1.0.1",
     "@mui/joy": "^5.0.0-beta.32",
     "@mui/material": "^5.15.15",
-    "@mui/x-charts": "^7.3.0",
-    "next": "14.2.1",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@mui/x-charts": "^7.3.1",
+    "@mui/x-date-pickers": "^6.20.0",
+    "dayjs": "^1.11.11",
+    "next": "^14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-horizontal-datepicker": "^2.0.3",
     "react-icons": "^5.0.1",
     "react-toastify": "^10.0.5",
+    "styled-components": "^6.1.8",
     "swiper": "^11.1.1"
   },
   "devDependencies": {
