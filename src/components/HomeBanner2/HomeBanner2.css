@@ -1,12 +1,21 @@
 .swiper-slide {
     width: 200px;
     height: 200px;
-    border-radius: 20px;
+    border-radius: 30px;
     border: 1px solid #e6e6e6;  
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+.mainhead1{
+    background-color: #46054f;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border:2.5px solid rgb(248, 244, 250) ;
 }
 
 .swiper-slide .swiper-slide-content{

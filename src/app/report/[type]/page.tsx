@@ -3,10 +3,12 @@ import React from 'react'
 import { LineChart } from '@mui/x-charts/LineChart';
 import './ReportPage.css'
 import { AiFillEdit } from 'react-icons/ai'
-import CaloriIntakePopup from '@/components/ReportFormPopup/CalorieIntake/CalorieIntakePopup';
-
+import CalorieIntakePopup from '@/components/ReportFormPopup/CalorieIntake/CalorieIntakePopup';
+import { usePathname } from 'next/navigation'
 const ReportPage = () => {
     const color = '#ffc20e';
+    const pathname = usePathname()
+    console.log(pathname)
 
     const chartsParams = {
         height: 300,
@@ -136,11 +138,20 @@ const ReportPage = () => {
                     />
                 )}
             </div>
-            <button className='editbutton' onClick={() => setShowCalorieIntakePopup(true)}>
+            <button className='editbutton' 
+            onClick={() =>{
+                if(pathname == '/report/Calorie%20Intake') {
+                    setShowCalorieIntakePopup(true)
+                }
+                else{
+                    alert('show popup for other reports')
+                }
+                }
+            } >
                 <AiFillEdit />
             </button>
             {showCalorieIntakePopup && (
-                <CaloriIntakePopup setShowCalorieIntakePopup={setShowCalorieIntakePopup} />
+                <CalorieIntakePopup setShowCalorieIntakePopup={setShowCalorieIntakePopup} />
             )}
         </div>
     );
